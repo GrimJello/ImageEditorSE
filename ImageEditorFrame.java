@@ -5,17 +5,16 @@ import java.awt.image.*;
 import java.io.*;
 import javax.imageio.*;
 
-public class ImageEditorFrame extends JFrame{ public ImageEditorFrame(){
-		setDefaultCloseOperation(EXIT_ON_CLOSE); setSize(400, 300);
-		setVisible(true);
-		
-		createMenuBar();
-		
-	} 
+public class ImageEditorFrame extends JFrame{
+
+public ImageEditorFrame(){
+	createMenuBar()
+	setDefaultCloseOperation(EXIT_ON_CLOSE); setSize(400, 300);
+	setVisible(true);		
+} 
 	
 		
 private void createMenuBar(){
-
 	JMenuBar menuBar = new JMenuBar();
 	setJMenuBar(menuBar);
 	JMenu menuFile = new JMenu("File");
